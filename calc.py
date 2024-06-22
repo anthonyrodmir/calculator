@@ -23,4 +23,7 @@ class Calc:
 
     def sqrt(self, a):
         """Return the square root of a"""
-        return a ** 0.5
+        if a < 0:
+            return f"{(-1 * a) ** 0.5}i"
+        else:
+            return a ** 0.5
